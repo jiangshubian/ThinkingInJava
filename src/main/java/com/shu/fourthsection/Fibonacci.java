@@ -1,4 +1,4 @@
-package fourthsection;
+package com.shu.fourthsection;
 
 import java.util.Arrays;
 
