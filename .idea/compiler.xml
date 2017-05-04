@@ -26,7 +26,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
-      <module name="ThinkingInJava" target="1.7" />
+      <module name="pom" target="1.5" />
+      <module name="ThinkingInJava" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
