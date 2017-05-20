@@ -1,7 +1,6 @@
 package com.shu.ninthsectiontest;
 
-import com.shu.ninthsection.AbstractObj;
-import com.shu.ninthsection.AbstractObjPrint;
+import com.shu.ninthchapter.AbstractObjPrint;
 import org.junit.Test;
 
 /**

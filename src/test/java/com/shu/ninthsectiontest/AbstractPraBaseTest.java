@@ -1,6 +1,6 @@
 package com.shu.ninthsectiontest;
 
-import com.shu.ninthsection.AbstractPraSub;
+import com.shu.ninthchapter.AbstractPraSub;
 import org.junit.Test;
 
 /**
