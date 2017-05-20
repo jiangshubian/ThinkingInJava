@@ -1,7 +1,5 @@
 package com.shu.ninthsection;
 
-import com.shu.ninthsection.AbstractObj;
-
 /**
  * Created by Administrator on 2017-05-04.
  */
