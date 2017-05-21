@@ -33,8 +33,28 @@ public class Sequence {
         }
     }
 
-    public Selector selector() {
+    private class ReverseSelector implements Selector {
+        int curInd = items.length-1;
+
+        public boolean end() {
+            return curInd == -1;
+        }
+
+        public Object current() {
+            return items[curInd];
+        }
+
+        public void next() {
+            if (curInd >= 0) curInd--;
+        }
+    }
+
+    public Selector sequenceSelector() {
         return new SequenceSelector();
+    }
+
+    public Selector reverseSelector() {
+        return new ReverseSelector();
     }
 
     public static void main(String[] args) {
@@ -42,10 +62,16 @@ public class Sequence {
         for (int i = 0; i < sequence.items.length; i++) {
             sequence.add(Integer.toString(i));
         }
-        Selector selector = sequence.selector(); //sequence.new SequenceSelector() 创建非静态内部类方式
-        while (!selector.end()) {
-            System.out.println(selector.current());
-            selector.next();
+        Selector sequenceSelector = sequence.sequenceSelector(); //sequence.new SequenceSelector() 创建非静态内部类方式
+        while (!sequenceSelector.end()) {
+            System.out.println(sequenceSelector.current());
+            sequenceSelector.next();
+        }
+        System.out.println("next is reverseSelector list:");
+        Selector reverseSelector = sequence.reverseSelector(); //sequence.new ReverseSelector() 创建非静态内部类方式
+        while (!reverseSelector.end()) {
+            System.out.println(reverseSelector.current());
+            reverseSelector.next();
         }
     }
 }
