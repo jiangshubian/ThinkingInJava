@@ -55,6 +55,16 @@ public class Pets implements Serializable {
     }
 
     @Override
+    public int hashCode() {
+        return this.id;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    @Override
     public String toString() {
         return "Pets{" +
                 "id=" + id +
