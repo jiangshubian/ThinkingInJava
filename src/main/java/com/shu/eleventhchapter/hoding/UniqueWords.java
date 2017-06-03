@@ -1,10 +1,7 @@
 package com.shu.eleventhchapter.hoding;
 
 import java.io.Serializable;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 /**
  * Created by Administrator on 2017-06-03.
@@ -20,6 +17,7 @@ public class UniqueWords {
             words.addAll(Arrays.<String>asList("a","B","A","aaa","AA","abc","aaa","Abc"));
 //            for (String w : words)
             System.out.println(words);
+
         }
     }
 

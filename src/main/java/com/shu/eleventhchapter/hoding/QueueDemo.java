@@ -20,7 +20,8 @@ public class QueueDemo {
         public static void main(String[] args) {
             //add to the int type
             Queue<Integer> queue = new LinkedList<Integer>();
-            Random random = new Random(47);
+            Random random1 = new Random(47);
+            Random random = random1;
             for (int i = 0; i < 10; i++)
                 queue.offer(random.nextInt(i + 10));
             printQ(queue);
@@ -30,6 +31,8 @@ public class QueueDemo {
             for (char c : "HandsomeBoys".toCharArray())
                 ch.offer(c);
             printQ(ch);
+
+
         }
     }
 }/*

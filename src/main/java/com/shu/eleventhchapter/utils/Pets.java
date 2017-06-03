@@ -54,6 +54,14 @@ public class Pets implements Serializable {
         return new Pets(random, String.valueOf(random));
     }
 
+    public static Pets[] createArray(int count) {
+        Pets[] petses = new Pets[count];
+        for (int i = 0; i < petses.length; i++) {
+            petses[i] = new Pets(i, String.valueOf(i));
+        }
+        return petses;
+    }
+
     @Override
     public int hashCode() {
         return this.id;
