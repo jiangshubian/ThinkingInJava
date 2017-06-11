@@ -23,7 +23,11 @@ public class TheReplacements {
 //        System.out.println(context);
 //        replace tow or more spaces at the beginning of each line with no spaces. Must enable MULTILINE mode.
 //        context = CONTENT.replaceAll("(?m)^ +", "");//每一行
+
+
+        //2
         String regex = "(x)(y\\w*)(z)";
+//        String regex = "xy\\w*z";//No group
 
         String input = "exy123z,xy456z";
         Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
@@ -33,7 +37,7 @@ public class TheReplacements {
             System.out.println(m.group());
             System.out.println(m.group(1));
             System.out.println(m.group(2));
-            break;
+            System.out.println(m.group(3));
         }
     }
 }

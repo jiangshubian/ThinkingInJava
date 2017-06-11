@@ -22,10 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="ThinkingInJava" />
+        <module name="code" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
+      <module name="code" target="1.5" />
       <module name="pom" target="1.5" />
       <module name="ThinkingInJava" target="1.5" />
       <module name="thinkinginjava4ed" target="1.5" />
