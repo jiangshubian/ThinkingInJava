@@ -1,4 +1,4 @@
-package com.shu.fourteenthchapter;
+package com.shu.twelfthchapter;
 
 import java.util.Random;
 
