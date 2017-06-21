@@ -16,8 +16,8 @@ class ShowMethods {
                     "ShowMethods qualified.class.name word\n" +
                     "To search for methods involving 'word'";
 
-//    private static Pattern pattern = Pattern.compile("\\w+\\.");
-    private static Pattern pattern = Pattern.compile("((final|native)|(\\w+\\.))");
+//    private static Pattern pattern = Pattern.compile("\\w+\\."); //除去包路径
+    private static Pattern pattern = Pattern.compile("((final|native)|(\\w+\\.))");//除去包路径或者修饰变量
 
     public static void main(String[] args) {
         if (args.length < 1) {
