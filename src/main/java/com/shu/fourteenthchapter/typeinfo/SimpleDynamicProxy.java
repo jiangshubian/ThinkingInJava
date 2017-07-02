@@ -6,6 +6,7 @@ import java.lang.reflect.Proxy;
 import java.util.Arrays;
 
 import static com.shu.fourteenthchapter.typeinfo.Interface.name;
+import static java.lang.reflect.Proxy.getProxyClass;
 import static java.lang.reflect.Proxy.newProxyInstance;
 
 /**
@@ -55,6 +56,10 @@ public class SimpleDynamicProxy {
         System.out.println(proxy.name); //调用属性值不触发代理
         consumer(proxy);//调用被代理方法时才触发代理
         System.out.println(DynamicInvocationHandler.getInvokeMethodCount());//统计被代理调用的方法度量
+        System.out.println("show Proxy.getProxyClass() method.............");
+        Class<Interface> clazzs = (Class<Interface>) Proxy.getProxyClass(Interface.class.getClassLoader(),
+                new Class[]{Interface.class});
+        System.out.println(clazzs);
     }
 }
 
