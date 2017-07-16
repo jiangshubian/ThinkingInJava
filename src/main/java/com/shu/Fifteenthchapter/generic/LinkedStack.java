@@ -68,7 +68,7 @@ public class LinkedStack<U> {
 
     private static class Test{
         public static void main(String[] args) {
-            LinkedStack<String> ls = new LinkedStack<>();
+            LinkedStack<String> ls = new LinkedStack<String>();
             for(String single : "This is a bad weather".split(" ")){
                 ls.push(single);
             }

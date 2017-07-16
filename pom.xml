@@ -10,11 +10,16 @@
     </modules>
     <name>thinking in java Maven Webapp</name>
     <url>http://maven.apache.org</url>
+
+    <build>
+        <finalName>thinking in java</finalName>
+    </build>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.10</version>
+            <version>4.12</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -22,20 +27,5 @@
             <artifactId>thinkinginjava4ed</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.eclipse.swt.win32/org.eclipse.swt.win32.win32.x86_64 -->
-        <!--<dependency>-->
-        <!--<groupId>org.eclipse.swt.win32</groupId>-->
-        <!--<artifactId>org.eclipse.swt.win32.win32.x86_64</artifactId>-->
-        <!--<version>3.4.1.v3449c</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.eclipse.swt</groupId>-->
-        <!--<artifactId>org.eclipse.swt.win32.win32.x86_64</artifactId>-->
-        <!--<version>3.4.1.v3449c</version>-->
-        <!--</dependency>-->
-        <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
     </dependencies>
-    <build>
-        <finalName>thinking in java</finalName>
-    </build>
 </project>
