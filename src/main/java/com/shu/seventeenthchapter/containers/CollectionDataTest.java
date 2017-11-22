@@ -13,6 +13,7 @@ import java.util.Set;
  * @Version: 1.0.0
  */
 public class CollectionDataTest {
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         Set<String> set = new LinkedHashSet<String>(new CollectionData(new Goverment(), Goverment.foundation.length));
         set.addAll(CollectionData.list(new Goverment(), Goverment.foundation.length));
