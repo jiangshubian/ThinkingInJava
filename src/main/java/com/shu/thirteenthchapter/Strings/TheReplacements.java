@@ -7,7 +7,6 @@ import java.io.InputStream;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static com.sun.xml.internal.bind.v2.util.ClassLoaderRetriever.getClassLoader;
 import static java.util.regex.Pattern.MULTILINE;
 import static java.util.regex.Pattern.compile;
 import static net.mindview.util.BinaryFile.read;
