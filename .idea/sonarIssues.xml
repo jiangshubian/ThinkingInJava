@@ -38,6 +38,46 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/shu/twentyfirstchapter/concurrency/caughtException/CaptureUncaughtException.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/shu/twentyfirstchapter/concurrency/shareResource/AttemptLocking.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/shu/twentyfirstchapter/concurrency/shareResource/EvenChecker.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/shu/twentyfirstchapter/concurrency/shareResource/EvenGenerator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/shu/twentyfirstchapter/concurrency/shareResource/EvenGeneratorError.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/shu/twentyfirstchapter/concurrency/shareResource/IntGenerator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/shu/twentyfirstchapter/concurrency/shareResource/MutexEvenGenerator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/shu/twentyfirstchapter/concurrency/shareResource/AttemptLockingTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>
